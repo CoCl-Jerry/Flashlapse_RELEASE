@@ -111,6 +111,9 @@ def IR_toggle(self):
 def motorSliderRelease(self):
     current_CMD = "6~" + str(int(60 / (2.038 * Settings.RPM))) + "\n"
     send_CMD(current_CMD)
+    if Settings.clino_running:
+        current_CMD = "7\n"
+        send_CMD(current_CMD)
 
 
 def motor_rotate(deg):
