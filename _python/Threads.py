@@ -326,15 +326,21 @@ class Cyverse(QThread):
         while (count < Settings.total):
             if (len(Settings.file_list) > 0):
                 print("Cyverse Thread: File " + Settings.file_list[0])
-                fh = open(Settings.file_list[0], 'rb')
-                requests.put(url=uri + '/' + os.path.basename(Settings.file_list[0]),
-                             headers=headers,
-                             auth=auth,
-                             data=fh)
-                fh.close()
-                os.system("rm " + Settings.file_list[0])
-                del Settings.file_list[0]
-                count += 1
+
+                try:
+                    fh = open(Settings.file_list[0], 'rb')
+                    requests.put(url=uri + '/' + os.path.basename(Settings.file_list[0]),
+                                 headers=headers,
+                                 auth=auth,
+                                 data=fh)
+                    fh.close()
+                    os.system("rm " + Settings.file_list[0])
+                    del Settings.file_list[0]
+                    count += 1
+
+                except Exception as e:
+                    print(e)
+
             if not Settings.cyverse_running:
                 break
         Settings.cyverse_running = False
