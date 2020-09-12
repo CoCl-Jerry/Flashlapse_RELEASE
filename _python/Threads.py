@@ -332,7 +332,7 @@ class Cyverse(QThread):
                              auth=auth,
                              data=fh)
                 fh.close()
-                #os.system("rm " + Settings.file_list[0])
+                os.system("rm " + Settings.file_list[0])
                 del Settings.file_list[0]
                 count += 1
             if not Settings.cyverse_running:
