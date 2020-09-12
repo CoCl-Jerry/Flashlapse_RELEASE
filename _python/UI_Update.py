@@ -31,7 +31,8 @@ def CV_authenticated(self):
             "CyVerse Credentials Authentication Successful")
     else:
         self.cyverseConfirm_pushButton.setText(
-            "CyVerse Credentials Authentication Failed")
+            "CyVerse Credentials Authentication Fsailed")
+    validate_input(self)
 
 
 def cycle_update(self):
