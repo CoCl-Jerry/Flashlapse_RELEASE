@@ -1,5 +1,6 @@
 import Settings
 import Commands
+import Functions
 import os
 from PyQt5.QtGui import QImage, QPixmap
 
@@ -127,7 +128,7 @@ def update_frame_snap(self, file):
 
 
 def validate_input(self):
-    if internet():
+    if Functions.internet():
         self.Cyverse_frame.setEnabled(True)
     else:
         self.Cyverse_frame.setEnabled(False)

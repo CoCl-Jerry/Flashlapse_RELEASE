@@ -4,6 +4,7 @@ import Commands
 
 from PyQt5.QtWidgets import QFileDialog
 import os
+import socket
 
 
 def internet():
