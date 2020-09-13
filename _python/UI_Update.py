@@ -127,6 +127,11 @@ def update_frame_snap(self, file):
 
 
 def validate_input(self):
+    if internet():
+        self.Cyverse_frame.setEnabled(True)
+    else:
+        self.Cyverse_frame.setEnabled(False)
+
     Settings.total = int((Settings.duration * 60) / Settings.interval)
     if(Settings.total > 0 and len(Settings.sequence_name) != 0):
         self.startRoutines_pushButton.setEnabled(True)

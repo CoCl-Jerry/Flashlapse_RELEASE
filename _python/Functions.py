@@ -6,6 +6,16 @@ from PyQt5.QtWidgets import QFileDialog
 import os
 
 
+def internet():
+    try:
+        socket.setdefaulttimeout(3)
+        socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(
+            ("8.8.8.8", 53))
+        return True
+    except socket.error as ex:
+        return False
+
+
 def Camera_update(self):
     Settings.AOI_X = self.xAxis_horizontalSlider.sliderPosition() / 100
     Settings.AOI_Y = self.xAxis_horizontalSlider.sliderPosition() / 100

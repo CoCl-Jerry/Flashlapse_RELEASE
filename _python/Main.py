@@ -36,6 +36,7 @@ class MainWindow(QMainWindow, FlashLapse_UI.Ui_MainWindow):
         Settings.init(self)
         Call_Thread.sensor_init(self)
         Commands.startup()
+        UI_Update.validate_input(self)
 
         self.Start_spinBox.valueChanged.connect(
             lambda: UI_Update.LED_validate(self))
