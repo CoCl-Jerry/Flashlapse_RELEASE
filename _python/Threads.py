@@ -324,8 +324,8 @@ class Cyverse(QThread):
         uri = uri + '/' + Settings.sequence_name
         requests.request(method='MKCOL', url=uri, auth=auth)
         count = 0
-        while (count < Settings.total and Functions.internet()):
-            if (len(Settings.file_list) > 0):
+        while (count < Settings.total):
+            if (len(Settings.file_list) > 0 and Functions.internet()):
                 print("Cyverse Thread: File " + Settings.file_list[0])
 
                 try:
