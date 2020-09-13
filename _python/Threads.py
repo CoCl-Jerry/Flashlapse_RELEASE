@@ -1,5 +1,6 @@
 import Settings
 import Commands
+import Functions
 import os
 import Adafruit_DHT
 import requests
@@ -323,7 +324,7 @@ class Cyverse(QThread):
         uri = uri + '/' + Settings.sequence_name
         requests.request(method='MKCOL', url=uri, auth=auth)
         count = 0
-        while (count < Settings.total and internet()):
+        while (count < Settings.total and Functions.internet()):
             if (len(Settings.file_list) > 0):
                 print("Cyverse Thread: File " + Settings.file_list[0])
 
