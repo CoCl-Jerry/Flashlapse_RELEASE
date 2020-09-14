@@ -20,7 +20,7 @@ def light_reset(self):
     self.B_spinBox.setValue(0)
     self.W_spinBox.setValue(0)
     self.Start_spinBox.setValue(1)
-    self.End_spinBox.setValue(85)
+    self.End_spinBox.setValue(86)
     self.BRT_spinBox.setValue(20)
 
     Settings.commands_list.clear()

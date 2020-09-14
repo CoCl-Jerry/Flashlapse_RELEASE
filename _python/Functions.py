@@ -134,12 +134,12 @@ def start_lighting_preset(self):
 
             if Settings.germinationDirection == 0:
                 Settings.send_commands_list.append(
-                    "1~0~85~" + Settings.current_CMD)
+                    "1~0~86~" + Settings.current_CMD)
             elif Settings.germinationDirection == 1:
                 Settings.send_commands_list.append(
                     "1~0~21~" + Settings.current_CMD)
                 Settings.send_commands_list.append(
-                    "1~63~85~" + Settings.current_CMD)
+                    "1~63~86~" + Settings.current_CMD)
             elif Settings.germinationDirection == 2:
                 Settings.send_commands_list.append(
                     "1~21~63~" + Settings.current_CMD)
@@ -148,10 +148,10 @@ def start_lighting_preset(self):
                     "1~0~42~" + Settings.current_CMD)
             elif Settings.germinationDirection == 4:
                 Settings.send_commands_list.append(
-                    "1~42~85~" + Settings.current_CMD)
+                    "1~42~86~" + Settings.current_CMD)
             elif Settings.germinationDirection == 5:
                 Settings.send_commands_list.append(
-                    "1~73~85~" + Settings.current_CMD)
+                    "1~73~86~" + Settings.current_CMD)
                 Settings.send_commands_list.append(
                     "1~0~10~" + Settings.current_CMD)
             elif Settings.germinationDirection == 6:
