@@ -740,7 +740,7 @@ class Ui_MainWindow(object):
         self.rotate_pushButton.setObjectName("rotate_pushButton")
         self.verticalLayout_13.addWidget(self.rotate_pushButton)
         self.verticalLayoutWidget_4 = QtWidgets.QWidget(self.Misc_Frame)
-        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(13, 10, 211, 129))
+        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(13, 10, 211, 111))
         self.verticalLayoutWidget_4.setObjectName("verticalLayoutWidget_4")
         self.verticalLayout_12 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_4)
         self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
