@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
         self.Address_label.setGeometry(QtCore.QRect(230, -5, 141, 31))
         self.Address_label.setObjectName("Address_label")
         self.color_label = QtWidgets.QLabel(self.Ligting_frame)
-        self.color_label.setGeometry(QtCore.QRect(230, 65, 141, 31))
+        self.color_label.setGeometry(QtCore.QRect(230, 70, 141, 31))
         self.color_label.setObjectName("color_label")
         self.horizontalLayoutWidget_4 = QtWidgets.QWidget(self.Ligting_frame)
         self.horizontalLayoutWidget_4.setGeometry(QtCore.QRect(20, 19, 561, 51))
