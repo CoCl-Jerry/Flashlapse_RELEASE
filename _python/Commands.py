@@ -100,10 +100,10 @@ def motorSliderChange(self):
 def IR_toggle(self):
     if not Settings.IR_stat:
         self.IR_pushButton.setText("IR STATUS:ON")
-        current_CMD = "9~1~\n"
+        current_CMD = "10~0~\n"
     else:
         self.IR_pushButton.setText("IR STATUS:OFF")
-        current_CMD = "9~0~\n"
+        current_CMD = "10~1~\n"
     Settings.IR_stat = not Settings.IR_stat
     send_CMD(current_CMD)
 
